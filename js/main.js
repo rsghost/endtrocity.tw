@@ -3,6 +3,7 @@ $(document).ready(function () {
   var $navbar = $('.navbar-collapse');
   var slides = ['#home', '#info', '#merch', '#video', '#music'];
   var slideDOM = {};
+  var parallaxStatus = 0;
 
   for (var i = 0; i < slides.length; i++) {
     slideDOM[slides[i]] = $(slides[i]);
@@ -16,24 +17,6 @@ $(document).ready(function () {
       $body.animate({
         scrollTop: top
       }, 500, 'easeInOutExpo');
-    };
-  };
-
-  var parallaxBackground = function () {
-    if (!this.enable) {
-      this.enable = 1;
-      $('#info').css({
-        background: 'transparent'
-      });
-
-      $('#music').css({
-        background: 'transparent'
-      });
-
-      $('.home-logo').css({
-        position: 'absolute',
-        'background-attachment': 'fixed'
-      });
     };
   };
 
@@ -61,7 +44,10 @@ $(document).ready(function () {
     overScrollFix: true
   });
 
-  $(".parallax-slider").on("load", function () {
-    parallaxBackground();
+  $('.parallax-slider').on('load', function (e) {
+    if (!parallaxStatus) {
+      parallaxStatus++;
+      $('#music, #info').css({ background: 'transparent' });
+    };
   });
 });
