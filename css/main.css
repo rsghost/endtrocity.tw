@@ -58,7 +58,7 @@ section {
   background-image: url("../img/shadow.png");
   background-position: center 0;
   background-size: auto 150%;
-  background-repeat: repeat;
+  background-repeat: repeat-x;
 }
 
 @keyframes fade1 {
