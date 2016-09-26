@@ -48,6 +48,8 @@ $(document).ready(function () {
     if (!parallaxStatus) {
       parallaxStatus++;
       $('#music, #info').css({ background: 'transparent' });
+
+      $('.youtube-player').attr('src', 'https://www.youtube.com/embed/YlaIXE3FvQg?cc_load_policy=1&cc_lang_pref=en&list=PL_-drv7dK6kadAr_8E5zxkt6BtQiHA33T&html5=1&controls=1&showinfo=1');
     };
   });
 });

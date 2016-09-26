@@ -24,7 +24,7 @@ section {
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: url("../img/home_bg.png");
+  background-image: url('../img/home_bg.png');
   background-position: center;
   background-size: auto 100%;
   background-repeat: no-repeat;
@@ -39,7 +39,7 @@ section {
   width: 50vh;
   height: 100%;
   margin: 0 auto;
-  background-image: url("../img/home_logo.jpg");
+  background-image: url('../img/home_logo.jpg');
   background-color: #000;
   background-position: center 0;
   background-size: auto 50%;
@@ -55,7 +55,7 @@ section {
   width: 50vh;
   height: 66.7%;
   margin: 0 auto;
-  background-image: url("../img/shadow.png");
+  background-image: url('../img/shadow.png');
   background-position: center 0;
   background-size: auto 100%;
   background-repeat: repeat-x;
@@ -98,7 +98,7 @@ section {
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: url("../img/arrow.png");
+  background-image: url('../img/arrow.png');
   background-position: center;
   background-size: 80%;
   background-repeat: no-repeat;
@@ -112,7 +112,7 @@ section {
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: url("../img/arrow.png");
+  background-image: url('../img/arrow.png');
   background-position: center;
   background-size: 60%;
   background-repeat: no-repeat;
@@ -120,7 +120,7 @@ section {
 }
 
 #info {
-  background-image: url("../img/info_bg.jpg");
+  background-image: url('../img/info_bg.jpg');
   background-color: #000;
   background-position: center;
   background-size: cover;
@@ -132,7 +132,7 @@ section {
   top: 0;
   width: 100%;
   height: 100%;
-  background-image: url("../img/info_logo.png");
+  background-image: url('../img/info_logo.png');
   background-position: center 0;
   background-size: auto calc(100% - 50px);
   background-repeat: no-repeat;
@@ -204,7 +204,7 @@ section {
   bottom: 0;
   width: 100%;
   height: 50px;
-  background-image: url("../img/shadow.png");
+  background-image: url('../img/shadow.png');
   background-position: center 0;
   background-size: auto 100%;
   background-repeat: repeat-x;
@@ -232,22 +232,22 @@ section {
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: url("../img/overlay.png");
+  background-image: url('../img/overlay.png');
   background-size: 4px;
   background-repeat: repeat;
   pointer-events: none;
 }
 
 .merch-bg1 {
-  background-image: url("../img/merch_bg1.jpg");
+  background-image: url('../img/merch_bg1.jpg');
 }
 
 .merch-bg2 {
-  background-image: url("../img/merch_bg2.jpg");
+  background-image: url('../img/merch_bg2.jpg');
 }
 
 .merch-bg3 {
-  background-image: url("../img/merch_bg3.jpg");
+  background-image: url('../img/merch_bg3.jpg');
 }
 
 .merch-title {
@@ -335,7 +335,7 @@ section {
 
 #music {
   height: calc(100% - 120px);
-  background-image: url("../img/music_bg.jpg");
+  background-image: url('../img/music_bg.jpg');
   background-color: #000;
   background-position: center;
   background-repeat: no-repeat;
@@ -349,7 +349,7 @@ section {
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: url("../img/overlay.png");
+  background-image: url('../img/overlay.png');
   background-size: 4px;
   background-repeat: repeat;
   pointer-events: none;
@@ -458,23 +458,23 @@ footer {
 }
 
 .adb-fa-facebook::before {
-  content: "\f230";
+  content: '\f230';
 }
 
 .adb-fa-instagram::before {
-  content: "\f16d";
+  content: '\f16d';
 }
 
 .adb-fa-spotify::before {
-  content: "\f1bc";
+  content: '\f1bc';
 }
 
 .adb-fa-youtube::before {
-  content: "\f16a";
+  content: '\f16a';
 }
 
 .adb-fa-soundcloud::before {
-  content: "\f1be";
+  content: '\f1be';
 }
 
 .outline-title {
@@ -495,7 +495,7 @@ footer {
   left: 0;
   width: 100%;
   height: 66.7%;
-  background-image: url("../img/shadow.png");
+  background-image: url('../img/shadow.png');
   background-position: center 0;
   background-size: auto 100%;
   background-repeat: repeat-x;
@@ -509,7 +509,7 @@ footer {
   bottom: 0;
   width: 100%;
   height: 50px;
-  background-image: url("../img/shadow.png");
+  background-image: url('../img/shadow.png');
   background-position: center 0;
   background-size: auto 100%;
   background-repeat: repeat-x;
@@ -686,6 +686,16 @@ footer {
   }
 }
 
+/* for iphone 4~5 */
+@media screen and (max-width: 360px) {
+  .merch-font2 {
+    line-height: 48px;
+    line-height: 3rem;
+    font-size: 32px;
+    font-size: 2rem;
+  }
+}
+
 /* for mobile */
 @media (max-aspect-ratio: 13/10), screen and (max-width: 767px) {
   .home-bg {
@@ -769,16 +779,6 @@ footer {
   }
 }
 
-/* for iphone 4~5 */
-@media screen and (max-width: 360px) {
-  .merch-font2 {
-    line-height: 48px;
-    line-height: 3rem;
-    font-size: 32px;
-    font-size: 2rem;
-  }
-}
-
 /* songkick item fix */
 @media screen and (max-height: 600px) {
   .songkick-widget {
@@ -798,7 +798,7 @@ footer {
   }
 }
 
-/* mobile browser address bar hidden fix */
+/* portrait mobile browser address bar hidden fix */
 @media (max-device-aspect-ratio: 3/4) {
   body {
     height: calc(100vw * 1.333 * 0.91);
@@ -823,9 +823,9 @@ footer {
   }
 }
 
-/* mobile background fix */
+/* portrait youtube fix */
 @media (max-device-aspect-ratio: 3/4), (max-device-aspect-ratio: 2/3), (max-device-aspect-ratio: 10/16), (max-device-aspect-ratio: 9/16) {
-  .home-logo {
-    width: 100%;
+  #video {
+    height: 50%;
   }
 }
