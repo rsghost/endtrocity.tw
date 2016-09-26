@@ -511,7 +511,7 @@ footer {
   height: 50px;
   background-image: url("../img/shadow.png");
   background-position: center 0;
-  background-size: auto 200%;
+  background-size: auto 100%;
   background-repeat: repeat-x;
   transform: scaleY(-1);
 }
