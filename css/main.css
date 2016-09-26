@@ -777,6 +777,12 @@ footer {
   .more-btn {
     margin: 25px auto;
   }
+
+  //  youtube player bottom shadow fix
+  .page-shadow {
+    top: -1px;
+    height: calc(100% + 1px);
+  }
 }
 
 /* songkick item fix */
