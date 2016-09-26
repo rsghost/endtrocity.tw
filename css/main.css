@@ -582,6 +582,32 @@ footer {
 }
 
 /* for small screen */
+@media screen and (max-width: 1280px) {
+  .home-bg {
+    background-image: url('../img/tablet/home_bg.png');
+  }
+
+  #info {
+    background-image: url('../img/tablet/info_bg.jpg');
+  }
+
+  .merch-bg1 {
+    background-image: url('../img/tablet/merch_bg1.jpg');
+  }
+
+  .merch-bg2 {
+    background-image: url('../img/tablet/merch_bg2.jpg');
+  }
+
+  .merch-bg3 {
+    background-image: url('../img/tablet/merch_bg3.jpg');
+  }
+
+  #music {
+    background-image: url('../img/tablet/music_bg.jpg');
+  }
+}
+
 @media screen and (max-width: 967px) {
   .navbar-nav {
     margin: 0;
@@ -624,7 +650,6 @@ footer {
   }
 }
 
-/* for small screen */
 @media screen and (max-width: 767px) {
   .tour-title {
     font-size: 32px;
@@ -663,13 +688,23 @@ footer {
 
 /* for mobile */
 @media (max-aspect-ratio: 13/10), screen and (max-width: 767px) {
+  .home-bg {
+    background-image: url('../img/mobile/home_bg.jpg');
+  }
+
   .home-logo {
+    display: none;
     background-image: none;
     background-attachment: scroll;
   }
 
   .home-shadow {
     display: none;
+    background-image: none;
+  }
+
+  #info {
+    background-image: url('../img/mobile/info_bg.jpg');
   }
 
   .info-item {
@@ -694,12 +729,26 @@ footer {
     display: none;
   }
 
+  .fb-photo {
+    background-image: none;
+  }
+
+  .merch-bg1 {
+    background-image: url('../img/mobile/merch_bg1.jpg');
+  }
+
+  .merch-bg2 {
+    background-image: url('../img/mobile/merch_bg2.jpg');
+  }
+
   .merch-bg3 {
+    background-image: url('../img/mobile/merch_bg3.jpg');
     background-position: 45%;
   }
 
   #music {
     height: 100%;
+    background-image: url('../img/mobile/music_bg.jpg');
     background-position: 40% !important;
   }
 
@@ -754,27 +803,11 @@ footer {
   body {
     height: calc(100vw * 1.333 * 0.91);
   }
-
-  .home-logo {
-    width: 100%;
-  }
-
-  .home-shadow {
-    width: 100%;
-  }
 }
 
 @media (max-device-aspect-ratio: 2/3) {
   body {
     height: calc(100vw * 1.5 * 0.91);
-  }
-
-  .home-logo {
-    width: 100%;
-  }
-
-  .home-shadow {
-    width: 100%;
   }
 }
 
@@ -782,26 +815,17 @@ footer {
   body {
     height: calc(100vw * 1.6 * 0.91);
   }
-
-  .home-logo {
-    width: 100%;
-  }
-
-  .home-shadow {
-    width: 100%;
-  }
 }
 
 @media (max-device-aspect-ratio: 9/16) {
   body {
     height: calc(100vw * 1.778 * 0.91);
   }
+}
 
+/* mobile background fix */
+@media (max-device-aspect-ratio: 3/4), (max-device-aspect-ratio: 2/3), (max-device-aspect-ratio: 10/16), (max-device-aspect-ratio: 9/16) {
   .home-logo {
-    width: 100%;
-  }
-
-  .home-shadow {
     width: 100%;
   }
 }
