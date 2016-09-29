@@ -1,9 +1,3 @@
-loadCSS('css/lib/bootstrap.min.css');
-loadCSS('css/lib/bootstrap-theme.min.css');
-loadCSS('css/lib/font-awesome.min.css');
-loadCSS('//fonts.googleapis.com/css?family=Dosis:400,600%7COpen+Sans:600');
-loadCSS('css/main.min.css');
-
 requirejs.config({
   'baseUrl': 'js/lib',
   'paths': {
@@ -12,7 +6,8 @@ requirejs.config({
     'parallax': 'parallax.min',
     'easing': 'jquery.easing.min',
     'md': 'mobile-detect.min',
-    'songkick': 'songkick.widget'
+    'songkick': 'songkick.widget',
+    'loadCSS': 'loadCSS.min'
   },
   'shim': {
     'bootstrap': ['jquery'],
@@ -21,7 +16,14 @@ requirejs.config({
   }
 });
 
-requirejs(['ga']);
+requirejs(['loadCSS'], function () {
+  loadCSS('css/lib/bootstrap.min.css');
+  loadCSS('css/lib/bootstrap-theme.min.css');
+  loadCSS('css/lib/font-awesome.min.css');
+  loadCSS('//fonts.googleapis.com/css?family=Dosis:400,600%7COpen+Sans:600');
+  loadCSS('css/main.min.css');
+});
+
 requirejs(['jquery', 'md', 'bootstrap', 'easing', 'parallax'], function ($, MobileDetect) {
   $(document).ready(function () {
     var md = new MobileDetect(window.navigator.userAgent),
@@ -93,6 +95,8 @@ requirejs(['jquery', 'md', 'bootstrap', 'easing', 'parallax'], function ($, Mobi
 
     // remove loading animate
     $('.loading').hide();
+
+    requirejs(['ga']);
     requirejs(['songkick']);
   });
 });
