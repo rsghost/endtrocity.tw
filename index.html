@@ -7,26 +7,177 @@
     <meta name="author" content="rsghost">
 
     <title>We are Endtrocity 暴 行 終 止 | OFFICIAL WEBSITE</title>
+    <meta property="og:type" content="website">
     <meta property="og:title" content="We are Endtrocity 暴 行 終 止 | OFFICIAL WEBSITE">
 
     <meta name="description" content="From Taipei, Taiwan, formed in 2011. No genre is our code, simply loud music with Spoken words from bottom society.">
     <meta property="og:description" content="From Taipei, Taiwan, formed in 2011. No genre is our code, simply loud music with Spoken words from bottom society.">
 
-    <meta property="og:type" content="website">
     <meta property="og:image" content="https://endtrocity.tw/img/banner.jpg">
     <meta property="og:url" content="https://endtrocity.tw">
     <meta name="twitter:card" content="summary_large_image">
 
     <link href="favicon.ico" rel="icon">
 
-
     <!-- lib -->
-    <link href="libs/css/bootstrap.min.css" rel="stylesheet">
-    <link href="libs/css/bootstrap-theme.min.css" rel="stylesheet">
-    <link href="libs/css/font-awesome.min.css" rel="stylesheet">
-    <link href="//fonts.googleapis.com/css?family=Dosis:400,600%7COpen+Sans:600" rel="stylesheet" type="text/css">
+    <noscript>
+      <link href="//fonts.googleapis.com/css?family=Dosis:400,600%7COpen+Sans:600" rel="stylesheet" type="text/css">
+      <link href="css/lib/bootstrap.min.css" rel="stylesheet">
+      <link href="css/lib/bootstrap-theme.min.css" rel="stylesheet">
+      <link href="css/lib/font-awesome.min.css" rel="stylesheet">
+      <link href="css/main.css" rel="stylesheet">
+    </noscript>
 
-    <link href="css/main.min.css" rel="stylesheet">
+    <style type="text/css">
+      /* latin */
+      @font-face {
+        font-family: 'Open Sans';
+        font-style: normal;
+        font-weight: 600;
+        src: local('Open Sans Semibold'), local('OpenSans-Semibold'), url(//fonts.gstatic.com/s/opensans/v13/MTP_ySUJH_bn48VBG8sNSugdm0LZdjqr5-oayXSOefg.woff2) format('woff2');
+        unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+      }
+      /* latin */
+      @font-face {
+        font-family: 'Dosis';
+        font-style: normal;
+        font-weight: 600;
+        src: local('Dosis SemiBold'), local('Dosis-SemiBold'), url(//fonts.gstatic.com/s/dosis/v6/O6SOu9hYsPHTU43R17NS5fesZW2xOQ-xsNqO47m55DA.woff2) format('woff2');
+        unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+      }
+      html {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        font-size: 16px;
+        background-color: #000;
+        font-family: sans-serif;
+        -ms-text-size-adjust: 100%;
+        -webkit-text-size-adjust: 100%;
+      }
+
+      body {
+        margin: 0;
+        position: relative;
+        width: 100%;
+        height: 100%;
+        font-size: 16px;
+        background-color: #000;
+      }
+
+      section {
+        position: relative;
+        width: 100%;
+        height: 100%;
+      }
+
+      #home {
+        width: 100%;
+        height: 100%;
+        background-color: #FFF;
+      }
+
+      .home-bg {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-image: url('img/home_bg.png');
+        background-position: center;
+        background-size: auto 100%;
+        background-repeat: no-repeat;
+        z-index: 1;
+      }
+
+      .home-logo {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        width: 50vh;
+        height: 100%;
+        margin: 0 auto;
+        background-image: url('img/home_logo.jpg');
+        background-color: #000;
+        background-position: center 0;
+        background-size: auto 50%;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+      }
+
+      .home-shadow {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        width: 50vh;
+        height: 66.7%;
+        margin: 0 auto;
+        background-image: url('img/shadow.png');
+        background-position: center 0;
+        background-size: auto 100%;
+        background-repeat: repeat-x;
+      }
+
+      @keyframes fade1 {
+        0%, 20%, 100% {
+          opacity: 1;
+        }
+        40%, 60% {
+          opacity: 0;
+        }
+      }
+
+      @keyframes fade2 {
+        0%, 15%, 95%, 100% {
+          opacity: 1;
+        }
+        35%, 55% {
+          opacity: 0;
+        }
+      }
+
+      .arrow {
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 50px;
+        width: 50px;
+        height: 50px;
+        margin: 0 auto;
+        pointer-events: none;
+        z-index: 1;
+      }
+
+      .arrow::before {
+        content: ' ';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-image: url('img/arrow.png');
+        background-position: center;
+        background-size: 80%;
+        background-repeat: no-repeat;
+        animation: fade1 3s infinite;
+      }
+
+      .arrow::after {
+        content: ' ';
+        position: absolute;
+        top: -13px;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-image: url('img/arrow.png');
+        background-position: center;
+        background-size: 60%;
+        background-repeat: no-repeat;
+        animation: fade2 3s infinite;
+      }
+    </style>
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -36,8 +187,39 @@
   </head>
 
   <body>
-    <h1 class="outline-title">ENDTROCITY OFFICIAL WEBSITE</h1>
-    <nav class="navbar navbar-inverse navbar-fixed-bottom">
+    <h1 class="outline-title" style="display:none;">ENDTROCITY OFFICIAL WEBSITE</h1>
+
+    <section id="home">
+      <h2 class="outline-title" style="display:none;">HOME</h2>
+      <div class="home-bg"></div>
+      <div class="home-logo"></div>
+      <div class="home-shadow"></div>
+      <div class="arrow"></div>
+    </section>
+
+    <section id="info" data-enllax-ratio=".4">
+      <h2 class="outline-title">TOUR&INFO</h2>
+      <div class="info-logo"></div>
+      <div class="page-shadow"></div>
+      <div class="info-item">
+        <div class="tour-info">
+          <span class="tour-title">ENDTROCITY TOUR</span>
+          <a class="songkick-widget" href="//www.songkick.com/artists/8805974" rel="external" data-theme="dark" data-font-color="#f4fa50" data-background-color="transparent" title="ENDTROCITY on Songkick">
+            <div class="loading">
+              <i class="fa adb-fa-circle-o-notch fa-spin fa-fw loading-icon"></i>
+            </div>
+          </a>
+        </div>
+        <div class="info-fb">
+          <span class="fb-title">FACEBOOK</span>
+            <a href="//facebook.com/Endtrocity" rel="external" title="ENDTROCITY on Facebook">
+              <img class="fb-photo" src="img/fb_screenshot.jpg" alt="ENDTROCITY on Facebook">
+            </a>
+        </div>
+      </div>
+    </section>
+
+    <nav class="navbar navbar-inverse navbar-fixed-bottom" style="display:none;">
       <h2 class="outline-title">NAVIGATION</h2>
       <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
         <span class="sr-only">Toggle navigation</span>
@@ -70,33 +252,9 @@
       </div>
     </nav>
 
-    <section id="home">
-      <h2 class="outline-title">HOME</h2>
-      <div class="home-bg"></div>
-      <div class="home-logo"></div>
-      <div class="home-shadow"></div>
-      <div class="arrow"></div>
-    </section>
-    <section id="info" data-enllax-ratio=".4">
-      <h2 class="outline-title">TOUR&INFO</h2>
-      <div class="info-logo"></div>
-      <div class="page-shadow"></div>
-      <div class="info-item">
-        <div class="tour-info">
-          <span class="tour-title">ENDTROCITY TOUR</span>
-          <a class="songkick-widget" href="//www.songkick.com/artists/8805974" rel="external" data-theme="dark" data-font-color="#f4fa50" data-background-color="transparent"></a>
-        </div>
-        <div class="info-link">
-          <span class="fb-title">FACEBOOK</span>
-            <a href="//facebook.com/Endtrocity" rel="external">
-              <img class="fb-photo" src="img/fb_screenshot.jpg" alt="ENDTROCITY on Facebook">
-            </a>
-        </div>
-      </div>
-    </section>
     <section id="merch">
       <h2 class="outline-title">MERCH</h2>
-      <div class="carousel slide" data-ride="carousel">
+      <div class="carousel slide">
         <div class="carousel-inner" role="listbox">
           <div class="item active merch-slide merch-bg1"></div>
           <div class="item merch-slide merch-bg2"></div>
@@ -110,10 +268,17 @@
         <a class="merch-btn" href="//endtrocity.bigcartel.com/products">Shop Now</a>
       </div>
     </section>
+
     <section id="video">
       <h2 class="outline-title">VIDEO</h2>
-      <iframe class="youtube-player" src="https://www.youtube.com/embed/YlaIXE3FvQg?cc_load_policy=1&cc_lang_pref=en&list=PL_-drv7dK6kadAr_8E5zxkt6BtQiHA33T&html5=1&controls=1&showinfo=0" allowfullscreen></iframe>
+      <iframe class="youtube-player" allowfullscreen></iframe>
+      <a class="loading youtube-url" href="//www.youtube.com/playlist?list=PL_-drv7dK6kadAr_8E5zxkt6BtQiHA33T" title="ENDTROCITY Official Music Video on Youtube">
+        <div class="loading">
+          <i class="fa adb-fa-circle-o-notch fa-spin fa-fw loading-icon"></i>
+        </div>
+      </a>
     </section>
+
     <section id="music" data-enllax-ratio=".4">
       <h2 class="outline-title">MUSIC</h2>
       <div class="page-shadow"></div>
@@ -121,37 +286,25 @@
         <a class="more-btn" href="//soundcloud.com/endtrocitytheband">Listen music on Soundcloud</a>
       </div>
       <div class="music-item">
-        <iframe class="soundcloud-player" src="//w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/users/68157237&amp;color=1e1e1e&amp;auto_play=false&amp;hide_related=false&amp;show_comments=false&amp;show_user=true&amp;show_reposts=false&amp;visual=true"></iframe>
+        <iframe class="soundcloud-player"></iframe>
         <a class="more-btn" href="//play.spotify.com/artist/75O2TDMOuGPWu1LxC1ckC3">Listen more on Spotify</a>
       </div>
     </section>
+
     <footer>
       <span class="copyright">Copyright © 2016 ENDTROCITY. All Rights Reserved.</span>
-      <div class="icon">
-        <a class="fa adb-fa-facebook" href="//facebook.com/Endtrocity" title="ENDTROCITY on Facebook" rel="external"></a>
-        <a class="fa adb-fa-instagram" href="//www.instagram.com/endtrocity/" title="ENDTROCITY on Instagram" rel="external"></a>
-        <a class="fa adb-fa-spotify" href="//play.spotify.com/artist/75O2TDMOuGPWu1LxC1ckC3" title="ENDTROCITY on Spotify" rel="external"></a>
-        <a class="fa adb-fa-youtube" href="//www.youtube.com/channel/UCZOaajF0iwMAJlj_9hgIRIg" title="ENDTROCITY on Youtube" rel="external"></a>
-        <a class="fa adb-fa-soundcloud" href="//soundcloud.com/endtrocitytheband" title="ENDTROCITY on Soundcloud" rel="external"></a>
+      <div class="icon-group">
+        <a class="fa adb-fa-facebook footer-icon" href="//facebook.com/Endtrocity" title="ENDTROCITY on Facebook" rel="external"></a>
+        <a class="fa adb-fa-instagram footer-icon" href="//www.instagram.com/endtrocity/" title="ENDTROCITY on Instagram" rel="external"></a>
+        <a class="fa adb-fa-spotify footer-icon" href="//play.spotify.com/artist/75O2TDMOuGPWu1LxC1ckC3" title="ENDTROCITY on Spotify" rel="external"></a>
+        <a class="fa adb-fa-youtube footer-icon" href="//www.youtube.com/channel/UCZOaajF0iwMAJlj_9hgIRIg" title="ENDTROCITY on Youtube" rel="external"></a>
+        <a class="fa adb-fa-soundcloud footer-icon" href="//soundcloud.com/endtrocitytheband" title="ENDTROCITY on Soundcloud" rel="external"></a>
       </div>
     </footer>
 
     <!-- lib -->
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.2.3/jquery.min.js"></script>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/parallax.js/1.4.2/parallax.min.js"></script>
-    <script src="libs/js/bootstrap.min.js"></script>
-    <script src="libs/js/jquery.easing.min.js"></script>
-
-    <script src="js/main.min.js"></script>
-    <script src="libs/js/songkick.widget.js"></script>
-    <script>
-      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-      ga('create', 'UA-84671609-1', 'auto');
-      ga('require', 'linkid');
-      ga('send', 'pageview');
+    <script defer src="js/lib/loadCSS.min.js"></script>
+    <script defer data-main="js/main.min.js" src="js/lib/require.js"></script>
     </script>
   </body>
 </html>

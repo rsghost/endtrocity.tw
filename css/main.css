@@ -12,6 +12,10 @@ section {
   height: 100%;
 }
 
+nav {
+  display: block !important;
+}
+
 #home {
   width: 100%;
   height: 100%;
@@ -155,12 +159,13 @@ section {
 }
 
 .songkick-widget {
+  display: block;
   width: 100% !important;
   height: 510px !important;
-  background-color: rgba(0,0,0,.4);;
+  background-color: rgba(0,0,0,.5);;
 }
 
-.info-link {
+.info-fb {
   position: relative;
   width: 30%;
   margin: 0 auto;
@@ -178,7 +183,7 @@ section {
   font-weight: 600;
   font-size: 40px;
   font-size: 2.5rem;
-  color: #f4fa50;
+  color: #fffc00;
   text-shadow: 0 0 0 rgba(0,0,0,0.4);
 }
 
@@ -189,7 +194,7 @@ section {
   font-weight: 600;
   font-size: 40px;
   font-size: 2.5rem;
-  color: #f4fa50;
+  color: #fffc00;
   text-shadow: 0 0 0 rgba(0,0,0,0.4);
 }
 
@@ -326,11 +331,21 @@ section {
 }
 
 .youtube-player {
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
   height: 100%;
   display: block;
   background-color: #000;
   border: none;
+}
+
+.youtube-url {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
 
 #music {
@@ -356,7 +371,7 @@ section {
 }
 
 .mobile-item {
-  display: none;
+  display: block;
   position: relative;
   top: 50%;
   transform: translateY(-50%);
@@ -372,10 +387,9 @@ section {
 }
 
 .soundcloud-player {
+  display: none;
   width: 40%;
   height: 100%;
-  background-color: #6b6b6b;
-  display: block;
   margin: 0 auto;
   opacity: 0.9;
   overflow: hidden;
@@ -393,7 +407,7 @@ section {
   color: #FFF;
   height: 56px;
   padding: 0 16px;
-  margin: 50px auto;
+  margin: 100px auto;
   box-sizing: border-box;
   border: 1px solid #FFF;
   border-radius: 0;
@@ -401,6 +415,10 @@ section {
   transition-property: all;
   transition-duration: 0.25s;
   transition-timing-function: ease-in-out;
+}
+
+.soundcloud-loaded {
+  margin: 50px auto;
 }
 
 .more-btn:hover {
@@ -433,7 +451,7 @@ footer {
   text-shadow: 0 0 0 rgba(255,255,255,0.1) !important;
 }
 
-.icon {
+.icon-group {
   position: relative;
   margin: 0 auto;
   display: block;
@@ -442,19 +460,26 @@ footer {
 
 .fa {
   color: #FFF;
-  padding: 10px 4px 10px 4px;
   text-decoration: none;
-  font-size: 1.5rem;
 }
 
 .fa:hover {
-  color: #9d9d9d;
+  color: #FFF;
   text-decoration: none;
 }
 
 .fa:focus {
   color: #FFF;
   text-decoration: none;
+}
+
+.footer-icon {
+  padding: 10px 4px 10px 4px;
+  font-size: 1.5rem;
+}
+
+.footer-icon:hover {
+  color: #9d9d9d;
 }
 
 .adb-fa-facebook::before {
@@ -478,6 +503,14 @@ footer {
 }
 
 .outline-title {
+  display: none;
+}
+
+.show {
+  display: block;
+}
+
+.hide {
   display: none;
 }
 
@@ -514,6 +547,22 @@ footer {
   background-size: auto 100%;
   background-repeat: repeat-x;
   transform: scaleY(-1);
+}
+
+.adb-fa-circle-o-notch::before {
+  content: '\f1ce';
+}
+
+.loading {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.loading-icon {
+  font-size: 48px;
+  font-size: 3rem;
 }
 
 /* navbar */
@@ -735,7 +784,7 @@ footer {
     text-align: center;
   }
 
-  .info-link {
+  .info-fb {
     display: none;
   }
 
@@ -763,7 +812,7 @@ footer {
   }
 
   .mobile-item {
-    display: block;
+    display: block !important;
   }
 
   .music-item {
@@ -771,17 +820,11 @@ footer {
   }
 
   .soundcloud-player {
-    display: none;
+    display: none !important;
   }
 
   .more-btn {
     margin: 25px auto;
-  }
-
-  //  youtube player bottom shadow fix
-  .page-shadow {
-    top: -1px;
-    height: calc(100% + 1px);
   }
 }
 
