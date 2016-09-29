@@ -1,3 +1,9 @@
+loadCSS('css/lib/bootstrap.min.css');
+loadCSS('css/lib/bootstrap-theme.min.css');
+loadCSS('css/lib/font-awesome.min.css');
+loadCSS('//fonts.googleapis.com/css?family=Dosis:400,600%7COpen+Sans:600');
+loadCSS('css/main.min.css');
+
 requirejs.config({
   'baseUrl': 'js/lib',
   'paths': {
