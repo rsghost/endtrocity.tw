@@ -20,161 +20,17 @@
     <link href="favicon.ico" rel="icon">
 
     <!-- lib -->
+    <style type="text/css">
+html{position:relative;width:100%;height:100%;font-size:16px;background-color:#000;font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{position:relative;width:100%;height:100%;font-size:16px;background-color:#000;margin:0}section{display:block;position:relative;width:100%;height:100%;opacity:0}.page-loading{display:block;position:fixed;top:0;left:0;width:100%;height:100%;background-color:#FFF;background-position:center;background-repeat:no-repeat;background-size:10%;z-index:3}#home{width:100%;height:100%;background-color:#FFF}.home-bg{position:absolute;top:0;left:0;width:100%;height:100%;background-position:center;background-size:auto 100%;background-repeat:no-repeat;z-index:1}.home-logo{position:absolute;top:0;left:0;right:0;width:50vh;height:100%;margin:0 auto;background-color:#000;background-position:center 0;background-size:auto 50%;background-repeat:no-repeat;background-attachment:fixed}.home-shadow{position:absolute;top:0;left:0;right:0;width:50vh;height:66.7%;margin:0 auto;background-image:url('../img/shadow.png');background-position:center 0;background-size:auto 100%;background-repeat:repeat-x}@keyframes fade1{0%,20%,100%{opacity:1}40%,60%{opacity:0}}@keyframes fade2{0%,15%,95%,100%{opacity:1}35%,55%{opacity:0}}.arrow{position:absolute;left:0;right:0;bottom:50px;width:50px;height:50px;margin:0 auto;pointer-events:none;z-index:1}.arrow::before{content:' ';position:absolute;top:0;left:0;width:100%;height:100%;background-image:url('../img/arrow.png');background-position:center;background-size:80%;background-repeat:no-repeat;animation:fade1 3s infinite}.arrow::after{content:' ';position:absolute;top:-13px;left:0;width:100%;height:100%;background-image:url('../img/arrow.png');background-position:center;background-size:60%;background-repeat:no-repeat;animation:fade2 3s infinite}@media screen and (max-width:1280px){.home-bg{background-image:url('../img/tablet/home_bg.png')}}@media(max-aspect-ratio:13/10),screen and (max-width:767px){.home-bg{background-image:url('../img/mobile/home_bg.jpg')}}
+    </style>
+
     <noscript>
       <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Dosis:400,600%7COpen+Sans:600">
       <link rel="stylesheet" href="css/lib/bootstrap.min.css">
       <link rel="stylesheet" href="css/lib/bootstrap-theme.min.css">
       <link rel="stylesheet" href="css/lib/font-awesome.min.css">
-      <link rel="stylesheet" href="css/main.css">
+      <link rel="stylesheet" href="css/main.min.css">
     </noscript>
-    <style type="text/css">
-      /* latin */
-      @font-face {
-        font-family: 'Open Sans';
-        font-style: normal;
-        font-weight: 600;
-        src: local('Open Sans Semibold'), local('OpenSans-Semibold'), url(//fonts.gstatic.com/s/opensans/v13/MTP_ySUJH_bn48VBG8sNSugdm0LZdjqr5-oayXSOefg.woff2) format('woff2');
-        unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
-      }
-      /* latin */
-      @font-face {
-        font-family: 'Dosis';
-        font-style: normal;
-        font-weight: 600;
-        src: local('Dosis SemiBold'), local('Dosis-SemiBold'), url(//fonts.gstatic.com/s/dosis/v6/O6SOu9hYsPHTU43R17NS5fesZW2xOQ-xsNqO47m55DA.woff2) format('woff2');
-        unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
-      }
-
-      html {
-        position: relative;
-        width: 100%;
-        height: 100%;
-        font-size: 16px;
-        background-color: #000;
-        font-family: sans-serif;
-        -ms-text-size-adjust: 100%;
-        -webkit-text-size-adjust: 100%;
-      }
-
-      body {
-        margin: 0;
-        position: relative;
-        width: 100%;
-        height: 100%;
-        font-size: 16px;
-        background-color: #000;
-      }
-
-      section {
-        position: relative;
-        width: 100%;
-        height: 100%;
-      }
-
-      #home {
-        width: 100%;
-        height: 100%;
-        background-color: #FFF;
-      }
-
-      .home-bg {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background-position: center;
-        background-size: auto 100%;
-        background-repeat: no-repeat;
-        z-index: 1;
-      }
-
-      .home-logo {
-        position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-        width: 50vh;
-        height: 100%;
-        margin: 0 auto;
-        background-position: center 0;
-        background-size: auto 50%;
-        background-repeat: no-repeat;
-        background-attachment: fixed;
-      }
-
-      .home-shadow {
-        position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-        width: 50vh;
-        height: 66.7%;
-        margin: 0 auto;
-        background-image: url('img/shadow.png');
-        background-position: center 0;
-        background-size: auto 100%;
-        background-repeat: repeat-x;
-      }
-
-      @keyframes fade1 {
-        0%, 20%, 100% {
-          opacity: 1;
-        }
-        40%, 60% {
-          opacity: 0;
-        }
-      }
-
-      @keyframes fade2 {
-        0%, 15%, 95%, 100% {
-          opacity: 1;
-        }
-        35%, 55% {
-          opacity: 0;
-        }
-      }
-
-      .arrow {
-        position: absolute;
-        left: 0;
-        right: 0;
-        bottom: 50px;
-        width: 50px;
-        height: 50px;
-        margin: 0 auto;
-        pointer-events: none;
-        z-index: 1;
-      }
-
-      .arrow::before {
-        content: ' ';
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background-image: url('img/arrow.png');
-        background-position: center;
-        background-size: 80%;
-        background-repeat: no-repeat;
-        animation: fade1 3s infinite;
-      }
-
-      .arrow::after {
-        content: ' ';
-        position: absolute;
-        top: -13px;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background-image: url('img/arrow.png');
-        background-position: center;
-        background-size: 60%;
-        background-repeat: no-repeat;
-        animation: fade2 3s infinite;
-      }
-    </style>
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -185,6 +41,7 @@
 
   <body>
     <h1 class="outline-title" style="display:none;">ENDTROCITY OFFICIAL WEBSITE</h1>
+    <div class="page-loading"></div>
 
     <section id="home">
       <h2 class="outline-title" style="display:none;">HOME</h2>
@@ -194,7 +51,8 @@
       <div class="arrow"></div>
     </section>
 
-    <link rel="stylesheet" href="css/simple.min.css">
+    <link rel="stylesheet" href="css/bg.min.css">
+
     <section id="info" data-enllax-ratio=".4">
       <h2 class="outline-title">TOUR&INFO</h2>
       <div class="info-logo"></div>
@@ -203,7 +61,7 @@
         <div class="tour-info">
           <span class="tour-title">ENDTROCITY TOUR</span>
           <a class="songkick-widget" href="//www.songkick.com/artists/8805974" rel="external" data-theme="dark" data-font-color="#f4fa50" data-background-color="transparent" title="ENDTROCITY on Songkick">
-            <div class="loading">
+            <div class="iframe-loading">
               <i class="fa adb-fa-circle-o-notch fa-spin fa-fw loading-icon"></i>
             </div>
           </a>
@@ -270,8 +128,8 @@
     <section id="video">
       <h2 class="outline-title">VIDEO</h2>
       <iframe class="youtube-player" allowfullscreen></iframe>
-      <a class="loading youtube-url" href="//www.youtube.com/playlist?list=PL_-drv7dK6kadAr_8E5zxkt6BtQiHA33T" title="ENDTROCITY Official Music Video on Youtube">
-        <div class="loading">
+      <a class="iframe-loading youtube-link" href="//www.youtube.com/playlist?list=PL_-drv7dK6kadAr_8E5zxkt6BtQiHA33T" title="ENDTROCITY Official Music Video on Youtube">
+        <div class="iframe-loading">
           <i class="fa adb-fa-circle-o-notch fa-spin fa-fw loading-icon"></i>
         </div>
       </a>

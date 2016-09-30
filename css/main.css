@@ -10,6 +10,14 @@ section {
   position: relative;
   width: 100%;
   height: 100%;
+  opacity: 1;
+}
+
+.page-loading {
+  animation: fade3 2s;
+  animation-fill-mode: forwards;
+  animation-direction: alternate;
+  pointer-events: none;
 }
 
 nav {
@@ -79,6 +87,15 @@ nav {
     opacity: 1;
   }
   35%, 55% {
+    opacity: 0;
+  }
+}
+
+@keyframes fade3 {
+  0% {
+    opacity: 1;
+  }
+  60%, 100% {
     opacity: 0;
   }
 }
@@ -341,7 +358,7 @@ nav {
   border: none;
 }
 
-.youtube-url {
+.youtube-link {
   top: 0;
   left: 0;
   width: 100%;
@@ -553,7 +570,7 @@ footer {
   content: '\f1ce';
 }
 
-.loading {
+.iframe-loading {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -636,10 +653,6 @@ footer {
     background-image: url('../img/tablet/home_bg.png');
   }
 
-  #info {
-    background-image: url('../img/tablet/info_bg.jpg');
-  }
-
   .merch-bg1 {
     background-image: url('../img/tablet/merch_bg1.jpg');
   }
@@ -650,10 +663,6 @@ footer {
 
   .merch-bg3 {
     background-image: url('../img/tablet/merch_bg3.jpg');
-  }
-
-  #music {
-    background-image: url('../img/tablet/music_bg.jpg');
   }
 }
 

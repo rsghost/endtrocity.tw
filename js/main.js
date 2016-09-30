@@ -74,25 +74,20 @@ requirejs(['jquery', 'md', 'bootstrap', 'easing', 'parallax'], function ($, Mobi
       overScrollFix: true
     });
 
-
+    var url = '//www.youtube.com/embed/vjwL55__F48?cc_load_policy=1&cc_lang_pref=en&list=PL_-drv7dK6kadAr_8E5zxkt6BtQiHA33T&html5=1&controls=1&showinfo='
     // mobile
     if (md.mobile()) {
-      $('.youtube-player').attr('src', '//www.youtube.com/embed/vjwL55__F48?cc_load_policy=1&cc_lang_pref=en&list=PL_-drv7dK6kadAr_8E5zxkt6BtQiHA33T&html5=1&controls=1&showinfo=0');
+      $('.youtube-player').attr('src', url + '0');
     } else {
       $('#music, #info').css({ background: 'transparent' });
-
-      // $('.youtube-player').attr('src', '//www.youtube.com/embed/videoseries?cc_load_policy=1&cc_lang_pref=en&list=PL_-drv7dK6kadAr_8E5zxkt6BtQiHA33T&html5=1&controls=1&showinfo=1');
-      $('.youtube-player').attr('src', '//www.youtube.com/embed/vjwL55__F48?cc_load_policy=1&cc_lang_pref=en&list=PL_-drv7dK6kadAr_8E5zxkt6BtQiHA33T&html5=1&controls=1&showinfo=1');
-
+      $('.youtube-player').attr('src', url + '1');
       $('.soundcloud-player').attr('src', '//w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/users/68157237&color=1e1e1e&auto_play=false&hide_related=false&show_comments=false&show_user=true&show_reposts=false&visual=true').addClass('show');
-
       $('.more-btn').addClass('soundcloud-loaded');
-
       $('.mobile-item').addClass('hide');
     };
 
     // remove loading animate
-    $('.loading').hide();
+    $('.iframe-loading').hide();
 
     requirejs(['ga']);
     requirejs(['songkick']);
