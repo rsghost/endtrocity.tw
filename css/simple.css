@@ -191,6 +191,6 @@ section {
   }
 
   .page-loading {
-    display: none;
+    opacity: 0;
   }
 }
