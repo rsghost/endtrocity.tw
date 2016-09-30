@@ -14,7 +14,7 @@ section {
 }
 
 .page-loading {
-  animation: fade3 2s;
+  animation: fade3 1s;
   animation-fill-mode: forwards;
   animation-direction: alternate;
   pointer-events: none;
