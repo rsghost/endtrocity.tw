@@ -179,12 +179,6 @@ section {
   animation: fade2 3s infinite;
 }
 
-@media screen and (max-width: 1280px) {
-  .home-bg {
-    background-image: url('../img/tablet/home_bg.png');
-  }
-}
-
 @media (max-aspect-ratio: 13/10), screen and (max-width: 767px) {
   .home-bg {
     background-image: url('../img/mobile/home_bg.jpg');

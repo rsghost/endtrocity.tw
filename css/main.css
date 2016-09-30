@@ -649,10 +649,6 @@ footer {
 
 /* for small screen */
 @media screen and (max-width: 1280px) {
-  .home-bg {
-    background-image: url('../img/tablet/home_bg.png');
-  }
-
   .merch-bg1 {
     background-image: url('../img/tablet/merch_bg1.jpg');
   }
