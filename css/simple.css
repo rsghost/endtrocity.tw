@@ -189,4 +189,8 @@ section {
   .home-bg {
     background-image: url('../img/mobile/home_bg.jpg');
   }
+
+  .page-loading {
+    display: none;
+  }
 }
