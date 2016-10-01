@@ -45,45 +45,54 @@ requirejs(['jquery', 'md', 'bootstrap', 'easing', 'parallax'], function ($, Mobi
       };
     };
 
-    // menu events
-    $('.menu-font').each(function () {
-      var href = $(this).attr('href');
-      $(this).click(function (e) {
-        if (!e.shiftKey && !e.ctrlKey && e.button === 0) {
-          $navbar.collapse('hide');
-          moveSlide(href);
-          e.preventDefault();
-          e.stopPropagation();
-        };
-      });
-    });
-
     // enable slideshow
     $('.carousel').carousel({
       keyboard: false
     })
 
-    // enable parallax scrolling
-    $('#info').parallax({
-      imageSrc: 'img/info_bg.jpg',
-      overScrollFix: true
-    });
-
-    $('#music').parallax({
-      imageSrc: 'img/music_bg.jpg',
-      overScrollFix: true
-    });
-
     var url = '//www.youtube.com/embed/vjwL55__F48?cc_load_policy=1&cc_lang_pref=en&list=PL_-drv7dK6kadAr_8E5zxkt6BtQiHA33T&html5=1&controls=1&showinfo='
+
     // mobile
     if (md.mobile()) {
+      // enable youtuble player without info
       $('.youtube-player').attr('src', url + '0');
     } else {
+      // menu events
+      $('.menu-font').each(function () {
+        var href = $(this).attr('href');
+        $(this).click(function (e) {
+          if (!e.shiftKey && !e.ctrlKey && e.button === 0) {
+            $navbar.collapse('hide');
+            moveSlide(href);
+            e.preventDefault();
+            e.stopPropagation();
+          };
+        });
+      });
+
+
+      // enable parallax scrolling
+      $('#info').parallax({
+        imageSrc: 'img/info_bg.jpg',
+        overScrollFix: true
+      });
+
+      $('#music').parallax({
+        imageSrc: 'img/music_bg.jpg',
+        overScrollFix: true
+      });
+
       $('#music, #info').css({ background: 'transparent' });
+
+      // enable youtube player
       $('.youtube-player').attr('src', url + '1');
+
+      // enbale soundcloud widget
       $('.soundcloud-player').attr('src', '//w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/users/68157237&color=1e1e1e&auto_play=false&hide_related=false&show_comments=false&show_user=true&show_reposts=false&visual=true').addClass('show');
-      $('.more-btn').addClass('soundcloud-loaded');
+
+      // remove soundcloud btn
       $('.mobile-item').addClass('hide');
+      $('.more-btn').addClass('soundcloud-loaded');
     };
 
     // remove loading animate
