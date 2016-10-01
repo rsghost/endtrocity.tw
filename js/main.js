@@ -98,6 +98,10 @@ requirejs(['jquery', 'md', 'bootstrap', 'easing', 'parallax'], function ($, Mobi
     // remove loading animate
     $('.iframe-loading').hide();
 
+    setTimeout(function () {
+      $('.page-loading').hide();
+    }, 5000);
+
     requirejs(['ga']);
     requirejs(['songkick']);
   });
