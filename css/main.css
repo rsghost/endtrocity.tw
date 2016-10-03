@@ -14,9 +14,26 @@ section {
 }
 
 .page-loading {
-  animation: fade3 1s;
+  animation-name: fade3;
+  animation-duration: 1s;
   animation-fill-mode: forwards;
   animation-direction: alternate;
+
+  -ms-animation-name: fade3;
+  -ms-animation-duration: 1s;
+  -ms-animation-fill-mode: forwards;
+  -ms-animation-direction: alternate;
+
+  -moz-animation-name: fade3;
+  -moz-animation-duration: 1s;
+  -moz-animation-fill-mode: forwards;
+  -moz-animation-direction: alternate;
+
+  -o-animation-name: fade3;
+  -o-animation-duration: 1s;
+  -o-animation-fill-mode: forwards;
+  -o-animation-direction: alternate;
+
   pointer-events: none;
 }
 
@@ -123,7 +140,10 @@ nav {
   background-position: center;
   background-size: 80%;
   background-repeat: no-repeat;
-  animation: fade1 3s infinite;
+
+  animation-name: fade1;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
 }
 
 .arrow::after {
@@ -137,7 +157,10 @@ nav {
   background-position: center;
   background-size: 60%;
   background-repeat: no-repeat;
-  animation: fade2 3s infinite;
+
+  animation-name: fade2;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
 }
 
 #info {
